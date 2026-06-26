@@ -17,5 +17,4 @@ jobs:
           distribution: 'temurin'
 
       - name: Run tests
-        working-directory: jogodexadrez
         run: mvn test
