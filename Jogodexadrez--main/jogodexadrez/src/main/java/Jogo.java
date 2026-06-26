@@ -1,4 +1,0 @@
-interface Jogo
-{
-    void iniciar();
-}
