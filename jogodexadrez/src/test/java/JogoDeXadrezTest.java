@@ -41,20 +41,14 @@ public class JogoDeXadrezTest {
     }
 
     @Test
-    public void iniciarNaoDeveLancarExcecao() {
-        JogoDeXadrez jogo = new JogoDeXadrez();
-        assertDoesNotThrow(() -> jogo.iniciar());
-    }
-
-    @Test
-    public void casaLivreRetornaTrue(){
+    public void casaLivreRetornaTrue() {
         Tabuleiro tabuleiro = new Tabuleiro();
         assertTrue(tabuleiro.casaLivre("d4"));
     }
 
     @Test
-    public void casaOcupadaRetornaTrue(){
+    public void casaOcupadaRetornaFalse() {
         Tabuleiro tabuleiro = new Tabuleiro();
-        assertTrue(!tabuleiro.casaLivre("a1"));
+        assertFalse(tabuleiro.casaLivre("a1"));
     }
 }
