@@ -16,6 +16,11 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
+      - name: Debug structure
+        run: ls -R
+
+      - name: Find pom.xml (debug)
+        run: find . -name pom.xml
+
       - name: Run tests
-        working-directory: Jogodexadrez--main/jogodexadrez
         run: mvn test
